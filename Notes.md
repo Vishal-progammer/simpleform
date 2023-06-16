@@ -12,7 +12,7 @@
 - Phoenix events - this events are came from Phoenix liveview 
   - click event - phx-click
   - submmit event - phx-submit
-- we can include a assigns function aport from mount in HTML 
+- we can include a assigns function aport from mount in HTML as
   - by calling <%= test("")%> or by  <.test/>
 - sugar syntax is meaning of shortcut
 - socket help to have two way communication 
