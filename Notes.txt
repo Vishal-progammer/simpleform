@@ -1,0 +1,49 @@
+- create a form with button to add a number with other one 
+- if empty value is inserted consider it as 0 
+- add the default value 
+- use the core components like .simple_form, .button, .input              
+
+
+- web request are handled ny the project_web 
+- pass some data through the socket 
+  - to do assign a function to the 
+  - socket assigns.number or @number this can be also call as sugar sentense 
+- to include the elixir code in html write the code in elixir def mount function inside the function 
+- Phoenix events - this events are came from Phoenix liveview 
+  - click event - phx-click
+  - submmit event - phx-submit
+- we can include a assigns function aport from mount in HTML as
+  - by calling <%= test("")%> or by  <.test/>
+- sugar syntax is meaning of shortcut
+- socket help to have two way communication 
+- I have made a mistake instead of "noreply" in handle_event in have put "no_reply" 
+- When I am push the code in github I got a message to add username and useremail 
+- want to know about how to do mix format 
+- there is key error = :for key issue
+  - when you are defining a form you needed to explain additional property like :for -> field and name in input tag 
+  - we need to mount the form in the mount function 
+  - add a form variable in mount socket like "form: to_form(%{})"
+    - here the to_form is a function with empty parameter 
+    - in simpleform tag add @for and inside input tag add field{@form[:add_more]} for name 
+- Now make Handle_event for the form button "phx-submit"
+- define a handle event with copy to add button handle event
+- in the _params place, copy and paste the parameter which is displaing in terminal 
+  - %{"add_amount" => "5"} this is the way that parameters are structured
+  - make patten matching in the parameter 
+  - it through an error that "bad arithimatic" due to we defined the value of input tag to be as a "string"
+    - so we need to convert the "String into an integer"
+? how to view a specs in the vscode 
+- map -> patter matching -> in pattern matching in the format of Key -> value
+- want to know about the Enum, Map module 
+- to assign something into a form you need to add bracket {} like to insert elixir variables
+- since assign a variable in socket to diffent use it may come to large values so define the variable in the to_form variable and 
+   - call it by @form.params.add_amount_default 
+- in case format to assign a value to a variable set use -> symbol 
+  - and store the value in a variable and it in the place where you want 
+- to set the last given value to be present in next upcomming operation 
+  - in handle_event for add_more button add form variable in socket and then replace the default value number to the amount added in the last calculation 
+- in the first loading of the page the mount function is going to work after the started diffent function cna be work on.
+
+
+
+
