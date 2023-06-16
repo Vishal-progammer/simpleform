@@ -2,7 +2,7 @@ defmodule SimpleFormWeb.SimpleFormLive do
   use SimpleFormWeb,  :live_view
 
   def mount(_params, _session, socket) do
-    socket = assign(socket, number: 5)
+    socket = assign(socket, number: 9)
   {:ok, socket}
   end
 
